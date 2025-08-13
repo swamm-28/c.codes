@@ -5,7 +5,7 @@ void main ()
     int arr[10] = { 10, 9, 7, 101, 23, 44, 12, 78, 34, 23};     
     Bubble_Sort(arr);    
 }    
-void Bubble_Sort(int a[]) //array a[] points to arr.   
+void Bubble_Sort(int a[])    
 {  
 int i, j,temp;     
     for(i = 0; i<10; i++)    
