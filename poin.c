@@ -1,12 +1,12 @@
-#include<stdio.h>    
-int main()
-{ 
-int number=50;      
-int *p;        
-p=&number; 
-
-printf("Address of p variable is %x \n", p);   
-printf("Value of p variable is %d \n", *p);  
-   
-return 0;    
+#include<stdio.h>  
+void main ()  
+{  
+    int arr[5] = {1, 2, 3, 4, 5};  
+    int *p = arr;  
+    int i;  
+    printf("printing array elements...\n");  
+    for(i = 0; i< 5; i++)  
+    {  
+        printf("%d  ",*(p+i));  
+    }  
 }
