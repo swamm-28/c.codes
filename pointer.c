@@ -1,10 +1,15 @@
-#include<stdio.h>
-int main ()
-{
-    int num=7;
-    int *ptr;
+#include<stdio.h>  
+void main ()  
+{  
+    int a = 10;  
+    int *p;  
+    int **pp; 
 
-    printf("the value of num using pointer : %d\n");
-    *ptr=28;
-    printf("New value of num after dereferencing: %d\n", num);
+    p = &a; 
+    pp = &p;
+    
+    printf("address of a: %x\n",p); 
+    printf("address of p: %x\n",pp); 
+    printf("value stored at p: %d\n",*p); 
+    printf("value stored at pp: %d\n",**pp);
 }
